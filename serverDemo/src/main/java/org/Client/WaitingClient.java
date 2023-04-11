@@ -21,5 +21,6 @@ class WaitingClient{
         outputStream.writeBytes(sentence + '\n');
         newSentence = serverStream.readLine();
         System.out.println("OUTPUT DEL SERVER: " + newSentence);
+        waitingClientSocket.close();
     }
 }

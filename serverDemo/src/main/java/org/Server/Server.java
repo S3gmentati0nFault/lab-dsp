@@ -19,6 +19,7 @@ class Server{
             clientSentence = clientStream.readLine();
             capitalizedSentence = clientSentence.toUpperCase() + '\n';
             outputStream.writeBytes(capitalizedSentence);
+            connectionSocket.close();
         }
     }
 }
