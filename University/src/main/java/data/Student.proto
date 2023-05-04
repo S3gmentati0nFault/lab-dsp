@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+message Student{
+  optional string name = 1;
+  optional string surname = 2;
+  optional int32 yeadOfBirth = 3;
+
+  message Residence{
+    optional string street = 1;
+    optional int32 buildingNumber = 2;
+  }
+
+  optional Residence residence = 4;
+
+  message Exam{
+    optional string name = 1;
+    optional int32 mark = 2;
+    optional string verbalization = 3;
+  }
+
+  repeated Exam exams = 5;
+}
