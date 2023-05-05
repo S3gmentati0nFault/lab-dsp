@@ -40,7 +40,7 @@ public class Vocabulary {
         dictionary.put(word.getWord(), word.getDefinition());
     }
 
-    public synchronized void deleteWord(String word){
+    public synchronized void deleteWeord(String word){
         dictionary.remove(word);
     }
 }
