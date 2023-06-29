@@ -10,7 +10,7 @@ public class Sensor {
         String broker = "tcp://localhost:1883";
         String clientId = MqttClient.generateClientId();
         String topic = "home/sensor/temp";
-        int qos = 2;
+        int qos = 1;
 
 
         try {
@@ -20,7 +20,7 @@ public class Sensor {
                 MqttConnectOptions connOpts =
                         new MqttConnectOptions();
 
-                connOpts.setCleanSession(true);
+                connOpts.setCleanSession(false);
 
                 System.out.println(clientId + " Connecting Broker " + broker);
                 client.connect(connOpts);
