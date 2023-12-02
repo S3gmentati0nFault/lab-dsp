@@ -8,6 +8,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/**
+ *  Test class for the Chat environment
+ */
 public class Chat {
     public static void main(String[] args) throws IOException, InterruptedException {
         int clientPort, bufferPort, dimension;

@@ -6,6 +6,7 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 
+// A client class using Sockets and ProtocolBuffers to define a student for tests
 public class Client {
     public static void main(String[] args) throws IOException {
         StudentOuterClass.Student student =
