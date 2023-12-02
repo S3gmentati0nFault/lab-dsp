@@ -8,3 +8,7 @@ In this repository you can find:
   - GRPC
   - HTTP and REST
   - MQTT
+
+## To-do:
+  - [ ] Complete the documentation for the project
+  - [ ] Add a Group class to simulate a group-chat in the ChatGPT exercise
