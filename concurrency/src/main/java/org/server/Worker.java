@@ -8,12 +8,24 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.Socket;
 
+/**
+ *  The Worker class is the Thread class associated with the Server.
+ */
 public class Worker implements Runnable{
     private Socket connectionSocket;
     private DataOutputStream outputStream;
     private BufferedReader inputStream;
     private Tickets ticketsRemaining;
 
+    /**
+     *  Constructor for the Worker class.
+     *
+     *  @throws IOException Unhandled IOException caused by the inputStream and outputStream
+     *  declarations.
+     *
+     *  @param tickets The number of remaining tickets.
+     *  @param socket The socket that will be used by the Thread to communicate.
+     */
     public Worker(Socket socket, Tickets tickets) throws IOException {
         System.out.println("Costruzione Worker");
         connectionSocket = socket;
@@ -25,6 +37,10 @@ public class Worker implements Runnable{
         ticketsRemaining = tickets;
     }
 
+    /**
+     *  Override of the run method associated with the Thread class. It basically handles the
+     *  purchase of the ticket for the client.
+     */
     @Override
     public void run() {
         System.out.println("Inizio processing biglietti");

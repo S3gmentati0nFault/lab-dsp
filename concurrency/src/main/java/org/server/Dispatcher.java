@@ -6,6 +6,10 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+/**
+ *  This dispatcher class is a simple multi-threaded server that generates a new Thread for every
+ *  request coming from the outside.
+ */
 public class Dispatcher {
     public static void main(String[] args) throws IOException {
         ServerSocket listeningSocket =

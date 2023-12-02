@@ -6,6 +6,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.Socket;
 
+
+/**
+ *  A SlowClient class implemented to show that if a server is not used in a concurrent environment,
+ *  the slowest systems will hinder its capacity to deal with other clients.
+ */
 public class SlowClient {
     public static void main(String[] args) throws IOException, InterruptedException {
         Thread.sleep(20000);

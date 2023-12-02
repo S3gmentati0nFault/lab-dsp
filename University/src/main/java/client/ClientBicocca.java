@@ -4,6 +4,9 @@ import data.StudentOuterClass;
 
 import java.net.Socket;
 
+/**
+ *  ClientBicocca is simply another example to test the program.
+ */
 public class ClientBicocca {
      StudentOuterClass.Student student =
                 StudentOuterClass.Student.newBuilder()
