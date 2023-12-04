@@ -13,7 +13,7 @@ In this repository you can find:
 Even if I would like to go ahead and correct some of the exercises I have a lot on my plate right now, thus I will put them as to-dos in the README because I think it would actually be worth it to change how some of the things work in there.
 
 ## To-do:
-  - [ ] Complete the documentation for the project
+  - [x] Complete the documentation for the project
   - [ ] Add a Group class to simulate a group-chat in the ChatGPT exercise
   - [ ] Check the synchronization statements in the Dictionary exercise
   - [ ] Change the POST endpoint to a PUT endpoint for the Dictionary exercise
