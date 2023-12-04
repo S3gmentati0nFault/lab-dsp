@@ -3,8 +3,15 @@ import java.net.*;
 
 import static java.lang.Thread.sleep;
 
+/**
+ * Experiment server for a sum service
+ */
 class TCPServer { 
-
+	/**
+	 * Main method for the Server.
+	 * 
+	 * @throws Exception Very undescriptive exception, I suppose this one was used to avoid throwing all of the different kinds of exceptions required by the different operations.
+	 */
 	public static void main(String argv[]) throws Exception 
 	{ 
 		int num1, num2;

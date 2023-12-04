@@ -1,6 +1,9 @@
 import java.io.*;
 import java.net.*;
 
+/**
+ * Experiment Client class for a sum service built over sockets.
+ */
 class TCPClient {
 	public static void main(String argv[]) throws Exception {
 		String num2, num1;

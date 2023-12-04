@@ -1,14 +1,25 @@
-import java.util.ArrayList;
-import java.util.Random;
-import java.util.stream.IntStream;
-
+/**
+ * The Queue class should actually represent a supermarket.
+ */
 public class Queue {
     private int numberOfPlaces;
 
+    /**
+     * Constructor for the Queue class.
+     * 
+     * @param numberOfPlaces The total number of places available in the supermarket.
+     */
     public Queue(int numberOfPlaces){
         this.numberOfPlaces = numberOfPlaces;
     }
 
+    /**
+     * A synchronized visit method that allows access to one thread at a time and sequentially waits for the end of the visit for all of the people.
+     * 
+     * @param identifier Thread identifier.
+     * @param duration Expected duration of the visit.
+     * @throws InterruptedException Unhandled exception for the wait-notify mechanism
+     */
     synchronized public void startShopping(int identifier, int duration)
             throws InterruptedException {
         if(numberOfPlaces > 0) {

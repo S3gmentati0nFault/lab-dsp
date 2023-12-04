@@ -6,7 +6,13 @@ import client.StreamSum;
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
 
+/**
+ * The big daug Server class that implements all of the different services.
+ */
 public class Serverone {
+    /**
+     * Main method for the server.
+     */
     public static void main(String[] args) {
         try{
             Server server = ServerBuilder.forPort(6789)

@@ -8,13 +8,26 @@ import io.grpc.ManagedChannelBuilder;
 import io.grpc.stub.StreamObserver;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * Repeated Sum Client class.
+ */
 public class RepeatedClient {
+    /**
+     * Test method for the repeated sum service.
+     * 
+     * @throws InterruptedException Unhandled exception coming from the asynchronous GRPC call.
+     */
     public static void main(String[] args) throws InterruptedException {
         System.out.println("Chiamata asincrona a servizio di somma");
         asynchronousStreamCall();
         System.out.println("\n...Done!");
     }
 
+    /**
+     * Method that allows the caller to make a GRPC call to the remote process.
+     * 
+     * @throws InterruptedException
+     */
     private static void asynchronousStreamCall() throws InterruptedException {
         ManagedChannel channel = ManagedChannelBuilder
                 .forTarget("localhost:6789")

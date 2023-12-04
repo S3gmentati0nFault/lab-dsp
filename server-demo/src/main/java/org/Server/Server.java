@@ -3,7 +3,15 @@ package org.Server;
 import java.io.*;
 import java.net.*;
 
+/**
+ * Main server class.
+ */
 class Server{
+    /**
+     * Main method for the iterative server.
+     * 
+     * @throws Exception Very undescriptive exception, I suppose this one was used to avoid throwing all of the different kinds of exceptions required by the different operations.
+     */
     public static void main(String argv[]) throws Exception{
         String clientSentence;
         String capitalizedSentence;

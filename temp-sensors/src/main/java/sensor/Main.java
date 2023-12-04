@@ -5,7 +5,15 @@ import org.eclipse.paho.client.mqttv3.*;
 import javax.xml.crypto.Data;
 import java.sql.Timestamp;
 
+/**
+ * Main test class.
+ */
 public class Main {
+    /**
+     * Main method for the test class, it handles the subscription to the MQTT topics.
+     * 
+     * @throws InterruptedException Unhandled exception thrown somewhere.
+     */
     public static void main(String[] args) throws InterruptedException {
             MqttClient client;
             String broker = "tcp://localhost:1883";

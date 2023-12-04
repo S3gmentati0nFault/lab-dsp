@@ -9,13 +9,22 @@ import io.grpc.stub.StreamObserver;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * Stream Client class for the sum GRPC serivce
+ */
 public class StreamClient {
+    /**
+     * Main test method.
+     */
     public static void main(String[] args) {
         System.out.println("Chiamata asincrona a servizio di somma");
         asynchronousStreamCall();
         System.out.println("\n...Done!");
     }
 
+    /**
+     * Asynchronous stream call for the GRPC service
+     */
     private static void asynchronousStreamCall(){
         ManagedChannel channel = ManagedChannelBuilder
                 .forTarget("localhost:6789")

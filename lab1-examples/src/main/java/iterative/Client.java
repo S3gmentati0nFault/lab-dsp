@@ -3,7 +3,14 @@ package iterative;
 import java.io.*;
 import java.net.*;
 
+/**
+ * Iterative client class.
+ */
 class Client {
+        /**
+         * Main client method.
+         * @throws Exception Very undescriptive exception, I suppose this one was used to avoid throwing all of the different kinds of exceptions required by the different operations.
+         */
     public static void main(String argv[]) throws Exception {
         String sentence;
         String modifiedSentence;

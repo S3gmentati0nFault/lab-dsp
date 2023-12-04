@@ -2,7 +2,15 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.stream.IntStream;
 
+/**
+ * Main test class.
+ */
 public class Main {
+    /**
+     * Main method for the test class. It generates a set of people that are actually threads waiting for a random time and then tries to synchronize all of them with the join method.
+     * 
+     * @throws InterruptedException Unhandled exception coming from the join method.
+     */
     public static void main(String[] args)
             throws InterruptedException {
         ArrayList<Thread> people =

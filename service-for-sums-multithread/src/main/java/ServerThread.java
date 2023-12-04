@@ -1,11 +1,19 @@
 import java.io.*;
 import java.net.*;
+
+/**
+ * Actual Thread implementation.
+ */
 public class ServerThread extends Thread {
         private Socket connectionSocket = null;
         private BufferedReader inFromClient;
         private DataOutputStream outToClient;
 
-        // the constructor argument is an established socket
+        /**
+         * Constructor for the Server Thread.
+         * 
+         * @param s Communication socket for the server.
+         */
         public ServerThread(Socket s) {
             connectionSocket = s;
             try {
@@ -19,6 +27,10 @@ public class ServerThread extends Thread {
             }
         }
 
+        /**
+         * Implementation of the run function for the thread.
+         */
+        @Override
         public void run() {
             int number1, number2;
             Integer sum;

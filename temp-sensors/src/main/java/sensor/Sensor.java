@@ -4,7 +4,13 @@ import extra.CustomRandom.CustomRandom;
 import extra.Timer.Timer;
 import org.eclipse.paho.client.mqttv3.*;
 
+/**
+ * Sensor class.
+ */
 public class Sensor {
+    /**
+     * Main method for the Sensor class. It handles the MQTT publishing and subscription processes.
+     */
     public static void main(String[] args) {
         MqttClient client;
         String broker = "tcp://localhost:1883";

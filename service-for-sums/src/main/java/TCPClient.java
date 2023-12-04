@@ -1,7 +1,15 @@
 import java.io.*; 
 import java.net.*;
 
+/**
+ * TCP client experiment for a sum-based client-server communication.
+ */
 class TCPClient { 
+	/**
+	 * Main method for the project.
+	 * 
+	 * @throws Exception Very undescriptive exception, I suppose this one was used to avoid throwing all of the different kinds of exceptions required by the different operations.
+	 */
 	public static void main(String argv[]) throws Exception {
 		String num2, num1;
 
